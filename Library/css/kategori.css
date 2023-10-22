@@ -1,0 +1,172 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body covers the full viewport height */
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-image: linear-gradient(to right, #2196F3, #42A5F5);
+    color: white;
+    text-align: center;
+    padding: 20px 20px;
+    font-size: 22px;
+}
+
+nav {
+    background-color: #2196F3;
+    padding: 20px;
+    text-align: center;
+    margin-top: 0px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline-block;
+    position: relative;
+    margin: 15px;
+}
+
+nav a {
+    font-size: 18px;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #FFFFFF;
+    border-color: #2196F3;
+    color: #2196F3;
+}
+
+/* New Style for Active Menu Item */
+nav a.active {
+    background-color: #42A5F5;
+    border-color: #2196F3;
+    color: #FFFFFF;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+main img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin-bottom: 20px; /* Remove default margin-bottom */
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+footer {
+    background-color: #2196F3;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    flex: 1; /* This makes the content div take the remaining space and push the footer to the bottom */
+    padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px; /* Jarak antara blok kategori */
+    margin-left: 65px;
+    margin-right: 65px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.category {
+    margin-bottom: 30px;
+    width: 220px;
+    height: 200px; /* Set a fixed height for the book element */
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    align-items: center;
+    justify-content: space-between;
+    position: relative; /* Add position relative to enable positioning the tooltip */
+}
+
+.category h3 {
+    text-align: center;
+    margin-top: 5px;
+    background-color: #2196F3;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.category ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.category li {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.category a {
+    font-size: 16px;
+    color: #2196F3;
+    text-decoration: none;
+    border-bottom: 1px solid #2196F3;
+    transition: border-bottom 0.3s ease;
+}
+
+.category a:hover {
+    border-bottom: 2px solid #2196F3;
+}
+
+.judul {
+    text-align: center;
+    margin-top: 20px;
+}
